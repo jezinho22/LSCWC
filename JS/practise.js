@@ -1,6 +1,13 @@
-let dropdownList = document.getElementById("dropdownList");
-console.log("practise JS working");
+// global variables
+let currentWordList = [];
+let wordIndex = 0;
+let myTurn = {};
 
+console.log("practise.js link working");
+
+// populate dropdown list
+let dropdownList = document.getElementById("dropdownList");
+// use keys in wordList object in fifty-worst to provide names of lists
 for (let key in wordList) {
 	console.log("working " + key);
 	let opt = document.createElement("option");
@@ -9,10 +16,10 @@ for (let key in wordList) {
 	dropdownList.appendChild(opt);
 }
 
-let currentWordList = [];
-let wordIndex = 0;
-let myTurn = {};
+// set up event for choosing a list
+dropdownList.addEventListener("change", listSelectHandler);
 
+// uses selected list of words and puts it into an array on its own
 function listSelectHandler(event) {
 	let words = event.target.value;
 	let name = document.getElementById("name").value;
@@ -29,13 +36,11 @@ function displayWord() {
 	// add strategy to strategy box
 	let strategyBox = document.getElementById("strategy");
 	strategyBox.innerHTML = currentWordList[wordIndex][1];
+
 	console.log(wordBox.textContent, strategyBox.innerHTML);
 }
 
-dropdownList.addEventListener("change", listSelectHandler);
-
-let typeIn = document.getElementById("typeIn");
-
+//
 function textSubmit(event) {
 	event.preventDefault();
 	let textbox = event.target.textInput.value;
@@ -50,5 +55,6 @@ function textSubmit(event) {
 		displayWord();
 	}
 }
+let typeIn = document.getElementById("typeIn");
 
 typeIn.addEventListener("submit", textSubmit);

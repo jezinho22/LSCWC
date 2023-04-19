@@ -4,12 +4,11 @@
 // 		new SpeechSynthesisUtterance("Hello, this is your browser speaking.")
 // 	);
 // });
-console.log("js working");
-let clickMe = document.querySelector("#clickMe");
-console.log(clickMe);
 
-clickMe.addEventListener("change", function (event) {
-	console.log("change event fired");
-	console.log(event.target.value);
-	console.log(document.querySelector("#name").value);
-});
+// toggle class of card container to get flip
+let card = document.getElementById("flip-card");
+card.addEventListener("click", cardFlip);
+
+function cardFlip(event) {
+	card.classList.toggle("flip-me");
+}
