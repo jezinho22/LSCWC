@@ -37,10 +37,12 @@ function textSubmit(event) {
   event.preventDefault();
   let textbox = event.target.textInput.value;
   if (textbox === currentWordList[wordIndex][0]) {
-    wordIndex++;
+    currentWordList.shift();
     displayWord();
   } else {
+    let wrongItem = currentWordList.shift();
     alert("you are wrong, i will put this to the back, try again in a minute!");
+    currentWordList.push(wrongItem);
   }
 }
 
