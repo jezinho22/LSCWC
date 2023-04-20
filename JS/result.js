@@ -20,7 +20,14 @@ let td = document.createElement("td");
 td.textContent = parsed.name;
 let td2 = document.createElement("td");
 td2.textContent = parsed.list;
+
 let td3 = document.createElement("td");
-td3.textContent = countMisspellings(parsed.misspelled);
+// calculate misspellings and frequency
+let misspellStats = countMisspellings(parsed.misspelled);
+for (let i in Object.keys(misspellStats)) {
+	// add misspellings and frequency to string for display
+	td3.textContent += i + ": " + misspellStats[i] + ", ";
+}
+
 tr.append(td, td2, td3);
 tbody.appendChild(tr);
