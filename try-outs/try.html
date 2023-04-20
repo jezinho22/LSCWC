@@ -4,19 +4,22 @@
 		<link rel="stylesheet" href="try.css" />
 	</head>
 	<body>
-		<form>
-			<input type="text" id="name" />
-			<select name="clickMe" id="clickMe">
-				<option value="Choose a number">Choose a number</option>
-				<option value="One">One</option>
-				<option value="Two">Two</option>
-				<option value="Three">Three</option>
-				<option value="Four">Four</option>
-			</select>
-
-			<button id="clickIt">Click it</button>
-		</form>
-		<!-- <button id="speak">Speak</button> -->
+		<div id="flip-card" class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img
+						src="kanji.jpg"
+						alt="Avatar"
+						style="width: 200px; height: 300px" />
+				</div>
+				<div class="flip-card-back">
+					<h1>John Doe</h1>
+					<p>Architect & Engineer</p>
+					<p>We love that guy</p>
+				</div>
+			</div>
+		</div>
+		<!-- <button id="speak">Speak</button>-->
 		<script src="try.js"></script>
 	</body>
 </html>

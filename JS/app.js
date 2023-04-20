@@ -12,3 +12,13 @@ function Turn(name, list) {
 Turn.prototype.addMisspelled = function (misspelled) {
 	this.misspelled.push(misspelled);
 };
+// this should produce an object with key:value pairs for
+// the frequency of each mispelled word
+Turn.prototype.countMisspelled = function () {
+	let x = this.misspelled;
+	let count = {};
+	this.misspelled.forEach(function (item) {
+		count[item] = count[item] + 1 || 1;
+	});
+	return count;
+};
