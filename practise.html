@@ -28,13 +28,18 @@
 					<select id="dropdownList" placeholder="Choose practice list"></select>
 				</legend>
 			</form>
-			<div id="cardContainer">
-				<div id="cardToDo">
-					<div id="word"></div>
-					<div id="strategy"></div>
-				</div>
-				<div id="cardDone">
-					<img src="/" alt="back of card" id="cardBack" />
+			<div id="cardContainer" class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<div id="word"></div>
+						<div id="strategy"></div>
+					</div>
+					<div class="flip-card-back">
+						<img
+							src="/Assets/kanji.jpg"
+							alt="back of card"
+							id="card-back-image" />
+					</div>
 				</div>
 			</div>
 			<form id="typeIn">
