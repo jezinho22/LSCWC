@@ -13,8 +13,8 @@ body {
   margin: auto;
   background-image: url(/Assets//back_body.jpg);
 }
-
 body img {
+  width: 40%;
 }
 
 header img {
