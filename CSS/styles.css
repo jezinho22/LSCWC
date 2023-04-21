@@ -34,9 +34,12 @@ header {
     justify-content: left;
 }
 h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0 0 0.5rem 1rem;
+   margin: 0 0 0.5rem 1rem;
+   font-size: 1.5rem;
+	font-weight: 500;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-style: italic;
 }
 header h2 {
     margin: 0 0 0.75rem 1rem;
@@ -91,4 +94,3 @@ footer {
     nav li a {
         padding-right: 0.75rem;
     }
-}

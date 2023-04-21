@@ -1,57 +1,78 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-	background-color: transparent;
-	width: 200px;
-	height: 300px;
-	border: 1px solid #f1f1f1;
-	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-	position: relative;
-	width: 200px;
-	height: 300px;
-	text-align: center;
-	transition: transform 0.8s;
-	transform-style: preserve-3d;
+  position: relative;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .card-flip .flip-card-inner {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 200px;
-	height: 300px;
-	-webkit-backface-visibility: hidden; /* Safari */
-	backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 300px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-	background-color: #bbb;
-	color: black;
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 5px 5px 10px 1px #000;
+  border: 5px solid #000;
+  border: 5px solid;
+  border-image: url(/img/border-image.png) 15 / 5px / 0px stretch;
+  background: #fff url(/Assets/image_card.jpg) center center/cover no-repeat;
 }
 
 /* Style the back side */
 .flip-card-back {
-	background-color: transparent;
-	color: white;
-	transform: rotateY(180deg);
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+  box-shadow: 5px 5px 10px 1px #000;
+  border: 10px solid #000;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 #card-back-image {
-	width: 200px;
-	height: 300px;
+  width: 200px;
+  height: 300px;
 }
 
 #results {
-	visibility: hidden;
+  visibility: hidden;
 }
