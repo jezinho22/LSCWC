@@ -1,80 +1,94 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-	font-size: 1rem;
-	font-weight: 300;
-	letter-spacing: 1.5;
-	color: red;
-	background-color: blanchedalmond;
-	width: 90%;
-	max-width: 1024px;
-	margin: auto;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1.5;
+    color: brown;
+    background-color: whitesmoke;
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
 }
 
 header img {
-	width: 10%;
-	/* display: block; */
-	justify-self: end;
+    width: 30%;
+    justify-self: end;
 }
 
 header {
-	background-color: red;
-	color: black;
-	border: 2px solid black;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+    background-color: rgb(178, 2, 2);
+    color: black;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
-
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
 h1 {
-	font-size: 1.5rem;
-	font-weight: 700;
-	margin: 1rem 1rem 0.25rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 1rem;
 }
-h2 {
-	margin: 0 1rem 0.25rem;
+header h2 {
+    margin: 0 0 0.75rem 1rem;
 }
 nav {
-	align-self: flex-end;
-	margin-bottom: 3px;
+    font-size: smaller;
+    padding-left: 2px;
 }
 nav ul li a {
-	text-decoration: none;
-	color: inherit;
-}
-/* li:hover {
-	color: white;
-} */
-.heading {
-	display: flex;
-	flex-direction: column;
+    text-decoration: none;
+    color: inherit;
 }
 
 header div {
-	display: inline-block;
+    display: inline-block;
 }
 
 nav ul li {
-	display: inline-block;
-	padding-right: 0.5rem;
-	margin-left: 1rem;
-	text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 1rem;
 }
 
-@media (min-width: 700px) {
-	/* media query */
-	h1 {
-		color: white;
-	}
-	header {
-		background-color: red;
-		color: black;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-	}
+li:hover {
+    color: white;
+    transition: 1s;
+}
+
+footer {
+    background-color: rgb(178, 2, 2);
+    color: black;
+    border: 2px solid black;
+    font-size: 13px;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    /* display: flex;
+    align-self: flex-end; */
+}
+
+@media (min-width: 425px) {
+    header img {
+        max-height: 150px;
+        max-width: 150px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    header h2 {
+        font-size: 1.25rem;
+    }
+    nav li a {
+        padding-right: 0.75rem;
+    }
 }
