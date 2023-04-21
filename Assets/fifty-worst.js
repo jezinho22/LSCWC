@@ -1,5 +1,5 @@
 const wordList = {
-	MVPList: [
+	aMuchLongerListName: [
 		[
 			"embarrassment",
 			"embar<span class='rl'> ass </span><span class='gl'>ment</span>",

@@ -1,3 +1,12 @@
+body {
+	color: red;
+}
+main {
+	background-color: white;
+	border: 2px solid rgb(178, 2, 2);
+	padding: 10px;
+}
+
 #how-to-use,
 #about {
 	display: flex;
@@ -19,7 +28,7 @@ a {
 	color: inherit;
 }
 .body-text {
-	color: darkred;
+	color: rgb(178, 2, 2);
 	font-size: 0.9rem;
 	line-height: 1.05rem;
 }
@@ -31,6 +40,7 @@ a {
 	letter-spacing: 0.02rem;
 }
 .reference-text {
+	color: rgb(178, 2, 2);
 	font-size: 0.6rem;
 	line-height: 0.7rem;
 	margin: 0.2rem 0;
