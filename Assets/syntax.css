@@ -1,0 +1,27 @@
+body {
+	background-color: black;
+}
+.nx {
+	color: red; /*variables , console.log, */
+}
+.s2,
+.dl {
+	color: lime; /* strings and speech marks */
+}
+.p {
+	color: palegoldenrod; /* full stops, commas and semi-colons */
+}
+.c1 {
+	color: grey; /* comments */
+}
+.o {
+	color: yellow; /* operators */
+}
+.mi,
+.mf {
+	color: orange; /* numbers */
+}
+.kd,
+.kc {
+	color: skyblue; /* key words */
+}

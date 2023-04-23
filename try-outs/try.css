@@ -13,69 +13,27 @@ body {
 	margin: 0 auto;
 }
 
-h1,
-p {
-	font-family: sans-serif;
-	text-align: center;
-	padding: 20px;
+#drop_zone {
+	border: 3px dashed blue;
+	border-radius: 10px;
+	width: 800px;
+	height: 400px;
+	margin: 50px;
+	box-shadow: 5px 10px 18px #888888;
+	background-color: lightpink;
+	opacity: 50%;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
 }
 
-.txt,
-select,
-form > div {
-	display: block;
-	margin: 0 auto;
-	font-family: sans-serif;
-	font-size: 16px;
-	padding: 5px;
+.attribution {
+	font-size: 10px;
+	justify-self: start;
 }
 
-.txt {
-	width: 80%;
-}
-
-select {
-	width: 83%;
-}
-
-form > div {
-	width: 81%;
-}
-
-.txt,
-form > div {
-	margin-bottom: 10px;
-	overflow: auto;
-}
-
-.clearfix {
-	clear: both;
-}
-
-label {
-	float: left;
-	width: 10%;
-	line-height: 1.5;
-}
-
-.rate-value,
-.pitch-value {
-	float: right;
-	width: 5%;
-	line-height: 1.5;
-}
-
-#rate,
-#pitch {
-	float: right;
-	width: 81%;
-}
-
-.controls {
-	text-align: center;
-	margin-top: 10px;
-}
-
-.controls button {
-	padding: 10px;
+#file-input {
+	font-weight: 800;
 }
