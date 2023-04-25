@@ -29,7 +29,7 @@ function listSelectHandler(event) {
     // fetch the word list from wordList
     currentWordList = wordList[words];
     // create a new turn at the activity
-    myTurn = new Turn(name, words[0]);
+    myTurn = new Turn(name, words);
     displayWord();
 }
 function displayWord() {
@@ -62,6 +62,8 @@ function textSubmit(event) {
         currentWordList.push(wrongItem);
         displayWord();
     }
+    flipCard.classList.toggle("card-flip");
+    document.getElementById("textInput").value = "";
 }
 
 typeIn.addEventListener("submit", textSubmit);

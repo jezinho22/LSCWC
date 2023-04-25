@@ -1,66 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Practise</title>
-		<link rel="stylesheet" href="/CSS/reset.css" />
-		<link rel="stylesheet" href="/CSS/styles.css" />
-		<link rel="stylesheet" href="/CSS/practise.css" />
-	</head>
-	<body>
-		<header>
-			<div class="heading">
-				<h1>in a flash</h1>
-				<h2>learn spellings in a flash</h2>
-				<nav>
-					<ul>
-						<li><a href="index.html">About Us</a></li>
-						<li><a href="practise.html">Practise</a></li>
-						<li><a href="result.html">Results</a></li>
-					</ul>
-				</nav>
-			</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Practise</title>
+        <link rel="stylesheet" href="/CSS/reset.css" />
+        <link rel="stylesheet" href="/CSS/styles.css" />
+        <link rel="stylesheet" href="/CSS/practise.css" />
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                <h1>in a flash</h1>
+                <h2>learn spellings in a flash</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="practise.html">Practise</a></li>
+                        <li><a href="result.html">Results</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-			<img src="/Assets/jap_2.png" alt="placeholder" />
-		</header>
-		<main>
-			<form>
-				<legend>
-					<input type="text" id="name" name="name" placeholder="Your name" />
-					<select id="dropdownList" placeholder="Choose practice list"></select>
-				</legend>
-			</form>
-			<div id="cardContainer" class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front">
-						<div id="word"></div>
-						<div id="strategy"></div>
-					</div>
-					<div class="flip-card-back">
-						<img
-							src="/Assets/kanji.jpg"
-							alt="back of card"
-							id="card-back-image" />
-					</div>
-				</div>
-			</div>
-			<form id="typeIn">
-				<input
-					type="text"
-					id="textInput"
-					name="textInput"
-					placeholder="Type here" />
-				<button id="submit">Submit</button>
-				<button id="results">Results</button>
-			</form>
-		</main>
-		<footer>
-			<p>&copy Jez, Asmaa & Rachael</p>
-		</footer>
-		<script src="/Assets/fifty-worst.js"></script>
-		<script src="/JS/app.js"></script>
-		<script src="/JS/practise.js"></script>
-	</body>
+            <img src="/Assets/jap_2.png" alt="placeholder" />
+        </header>
+        <main>
+            <form>
+                <legend>
+                    <input type="text" id="name" name="name" placeholder="Your name" />
+                    <select id="dropdownList" placeholder="Choose practice list">
+                        <option value="">Choose List</option>
+                    </select>
+                </legend>
+            </form>
+            <div id="cardContainer" class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div id="word"></div>
+                        <div id="strategy"></div>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="/Assets/kanji.jpg" alt="back of card" id="card-back-image" />
+                    </div>
+                </div>
+            </div>
+            <form id="typeIn">
+                <input type="text" id="textInput" name="textInput" placeholder="Type here" />
+                <button id="submit">Submit</button>
+                <button id="results">Results</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy Jez, Asmaa & Rachael</p>
+        </footer>
+        <script src="/Assets/fifty-worst.js"></script>
+        <script src="/JS/app.js"></script>
+        <script src="/JS/practise.js"></script>
+    </body>
 </html>
