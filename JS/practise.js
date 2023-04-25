@@ -29,7 +29,7 @@ function listSelectHandler(event) {
     // fetch the word list from wordList
     currentWordList = wordList[words];
     // create a new turn at the activity
-    myTurn = new Turn(name, words);
+    myTurn = new Turn(name, words[0]);
     displayWord();
 }
 function displayWord() {
@@ -39,8 +39,9 @@ function displayWord() {
     // add strategy to strategy box
     let strategyBox = document.getElementById("strategy");
     strategyBox.innerHTML = currentWordList[wordIndex][1];
-
-    console.log(wordBox.textContent, strategyBox.innerHTML);
+    // clear textInput box
+    document.getElementById("textInput").value = "";
+    flipCard.classList = "flip-card";
 }
 
 //
@@ -62,8 +63,6 @@ function textSubmit(event) {
         currentWordList.push(wrongItem);
         displayWord();
     }
-    flipCard.classList.toggle("card-flip");
-    document.getElementById("textInput").value = "";
 }
 
 typeIn.addEventListener("submit", textSubmit);

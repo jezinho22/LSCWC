@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width" />
+
+		<title>Trying out new code</title>
+
 		<link rel="stylesheet" href="try.css" />
 	</head>
+
 	<body>
-		<div id="flip-card" class="flip-card">
-			<div class="flip-card-inner">
-				<div class="flip-card-front">
-					<img
-						src="kanji.jpg"
-						alt="Avatar"
-						style="width: 200px; height: 300px" />
-				</div>
-				<div class="flip-card-back">
-					<h1>John Doe</h1>
-					<p>Architect & Engineer</p>
-					<p>We love that guy</p>
-				</div>
-			</div>
+		<div id="drop_zone" ondrop="dropHandler(event);ondragover="dragOverHandler(event);"">
+			<p><span id="file-input">Choose a file</span> or drag it here</p>
+			<img src="/Assets/download-symbol.png" alt="">
+			<p><a class="attribution" href="https://www.flaticon.com/free-icons/save" title="save icons" >Save icon created by mavadee - Flaticon</a></p>
 		</div>
-		<!-- <button id="speak">Speak</button>-->
+
 		<script src="try.js"></script>
 	</body>
 </html>

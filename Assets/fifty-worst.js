@@ -2,7 +2,7 @@ const wordList = {
 	aMuchLongerListName: [
 		[
 			"embarrassment",
-			"embar<span class='rl'> ass </span><span class='gl'>ment</span>",
+			"emba <span class='rl'>rr ass </span><span class='gl'>ment</span>",
 		],
 		[
 			"fluorescent",
