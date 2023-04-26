@@ -13,11 +13,11 @@ console.log("practise.js link working");
 let dropdownList = document.getElementById("dropdownList");
 // use keys in wordList object in fifty-worst to provide names of lists
 for (let key in wordList) {
-	console.log("working " + key);
-	let opt = document.createElement("option");
-	opt.value = key;
-	opt.textContent = key;
-	dropdownList.appendChild(opt);
+    console.log("working " + key);
+    let opt = document.createElement("option");
+    opt.value = key;
+    opt.textContent = key;
+    dropdownList.appendChild(opt);
 }
 
 // set up event for choosing a list
@@ -81,18 +81,19 @@ function textSubmit(event) {
 		currentWordList.push(wrongItem);
 		displayWord();
 	}
+
 }
 
 typeIn.addEventListener("submit", textSubmit);
 
 flipCard.addEventListener("click", flipHandler);
 function flipHandler(event) {
-	flipCard.classList.toggle("card-flip");
+    flipCard.classList.toggle("card-flip");
 }
 
 resultsButton.addEventListener("click", resultsButtonHandler);
 function resultsButtonHandler(event) {
-	let stringified = JSON.stringify(myTurn);
-	localStorage.setItem("results", stringified);
-	window.location.href = "result.html";
+    let stringified = JSON.stringify(myTurn);
+    localStorage.setItem("results", stringified);
+    window.location.href = "result.html";
 }
