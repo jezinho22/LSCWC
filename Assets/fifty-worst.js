@@ -1,5 +1,5 @@
 const wordList = {
-	aMuchLongerListName: [
+	Tricky_words_1: [
 		[
 			"embarrassment",
 			"emba <span class='rl'>rr ass </span><span class='gl'>ment</span>",
@@ -14,7 +14,7 @@ const wordList = {
 		],
 	],
 
-	MVPList2: [
+	Tricky_words_2: [
 		[
 			"psychiatrist",
 			"<span class='rl'>p-</span>sy<span class='rl'>-ch-</span>iatrist",

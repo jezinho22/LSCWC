@@ -26,7 +26,8 @@ let td3 = document.createElement("td");
 let misspellStats = countMisspellings(parsed.misspelled);
 for (let i in Object.keys(misspellStats)) {
 	// add misspellings and frequency to string for display
-	td3.textContent += i + ": " + misspellStats[i] + ", ";
+	let key = Object.keys(misspellStats)[i];
+	td3.textContent += key + ": " + misspellStats[key] + ", ";
 }
 
 tr.append(td, td2, td3);
