@@ -36,3 +36,60 @@ domain) on your first try, is a fool's errand.
 
 Instead, use this process as a starting point which can be refined as new ideas
 (or roadblocks) pop up during the design and build process of your program.
+
+As long ago as the 1880s, Hermann Ebbinghaus was showing how sequences of
+information can be learned by being exposed to them and then recalling them, and
+this is what our flash cards enable. Ebbinghaus concluded that the most
+effective way to learn facts was to revisit them at intervals, which increase
+after each learning. So for best results, use our flashcards again after half a
+day, a full day, three days, 6 days, 12 days and 24 days. Or more often, if you
+like.
+
+"The capacity to learn is a gift; the ability to learn is a skill; the
+willingness to learn is a choice" Brian Herbert
+
+Students, with supportive instruction, are capable of learning to develop and
+use a combination of phonological, orthographic and morphological strategies
+from the earliest years of school (Critten et al 2013, Daffern 2018, Treiman &
+Kessler 2014).
+
+But not every word can be spelled with this knowledge, and many of us struggle
+with words with multiple “tricky bits”.
+
+“I cannot write in English, because of the treacherous spelling. When I am
+reading, I only hear it and am unable to remember what the write word looks
+like” Albert Einstein
+
+Research tells us that practising and learning words is likely to improve
+spelling competence, and if this is combined with the strategies above, the
+likely improvement is significant (Fisher et al, 2007). Therefore our flashcards
+provide cues about tricky bits and where morphology can also help.
+
+“Ladies, if you want to know the way to my heart... good spelling and good
+grammar, good punctuation, capitalize only where you are supposed to capitalize,
+it's done” John Mayer
+
+### User stories
+
+- I am a user that wants to learn to write commonly mispelled words
+- I am a user that wants to know which words I have spelled wrong when
+  practising
+- I am a user that wants to learn vocabulary in another language
+- I am a user that wants to use spaced retrieval to learn spellings
+
+### Our problem domain
+
+- How to imitate flash cards so the user can read the card, turn the card over
+  and then try to write the target word.
+- How to allow the user to write the word sometimes without seeing the word.
+- How to ensure that the correct spellings are achieved in every session, and
+  that misconceptions or misspellings are not allowed to remain beyond the
+  session, by repeating at intervals until they are correctly written.
+- How to enable the user to see which words had caused problems.
+- How to enable users to input their own content to practise.
+- How to adapt this to languages eg Japanese
+- How to adapt this to code eg javascript syntax items
+
+### Technical problems
+
+- CSS animation for flipping a card

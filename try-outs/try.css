@@ -37,3 +37,15 @@ body {
 #file-input {
 	font-weight: 800;
 }
+.rl {
+	color: #ff3131;
+}
+.gl {
+	color: #0fff50;
+}
+.b {
+	font-weight: bold;
+}
+.bl {
+	color: blue;
+}
