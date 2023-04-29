@@ -1,5 +1,5 @@
 const wordList = {
-	aMuchLongerListName: [
+	Tricky_words_1: [
 		[
 			"embarrassment",
 			"emba <span class='rl'>rr ass </span><span class='gl'>ment</span>",
@@ -12,9 +12,19 @@ const wordList = {
 			"accommodate",
 			"a<span class='rl'>-cc-</span>o<span class='rl'>-mm-</span>odate",
 		],
+		[
+			"conscience",
+			"con <span class='rl'>sc i </span><span class='gl'>ence</span>",
+		],
+		["xylophone", "<span class='rl'>x y lo </span>phone"],
+		[
+			"exhilarate",
+			"ex <span class='rl'>h </span>il <span class='rl'>a </span>rate",
+		],
+		["weird", "w<span class='rl'> e i </span>rd ('wee-ird')"],
 	],
 
-	MVPList2: [
+	Tricky_words_2: [
 		[
 			"psychiatrist",
 			"<span class='rl'>p-</span>sy<span class='rl'>-ch-</span>iatrist",
@@ -27,22 +37,24 @@ const wordList = {
 			"necessary",
 			"ne <span class='rl'>ce ss </span><span class='gl'>ary</span>",
 		],
+		[
+			"questionnaire",
+			"questio <span class='rl'>nn </span>air <span class='rl'>e </span>",
+		],
+		[
+			"mischievous",
+			"mis ch <span class='rl'>ie </span><span class='gl'>v ous </span>(<span class='b'>not</span> v <span class='bl b'>i </span>ous)",
+		],
+		["rhythm", "r <span class='rl'>h y </span>th "],
 	],
 };
 
 const noStrategyYet = [
-	"necessary",
-	"questionnaire",
-	"mischievous",
-	"rhythm",
 	"minuscule",
-	"conscience",
-	"xylophone",
 	"pronunciation",
 	"graffiti",
 	"millennium",
 	"occurrence",
-	"exhilarate",
 	"restaurant",
 	"accessory",
 	"guarantee",
@@ -52,7 +64,6 @@ const noStrategyYet = [
 	"colleague",
 	"definite",
 	"humorous",
-	"Weird",
 	"symphony",
 	"illicit",
 	"species",
