@@ -1,8 +1,8 @@
-## Domain modeling
+## Domain modeling: Summary
 
-Summary Domain modeling is the process of creating a conceptual model for a
-specific problem. And a domain model that's articulated well can verify and
-validate your understanding of that problem.
+Domain modeling is the process of creating a conceptual model for a specific
+problem. And a domain model that's articulated well can verify and validate your
+understanding of that problem.
 
 Here's some tips to follow when building your own domain models.
 
@@ -92,4 +92,9 @@ it's done” John Mayer
 
 ### Technical problems
 
-- CSS animation for flipping a card
+- CSS animation for flipping a card and making sure it flipped at the right
+  times: it turned out to need more controls after the MVP stage was reached
+- managing different learning content: it will be hard to make fields on card
+  adapt to different info like languages
+- version management: sharing out tasks and then merging the outcomes is tricky
+  when the code overlaps eg in style.css or bug fixing
