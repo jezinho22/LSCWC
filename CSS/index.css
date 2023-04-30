@@ -19,8 +19,7 @@ main {
     margin: 3rem 1rem 1rem;
     display: inline-block;
 }
-#how-to-use p :hover,
-#about p :hover {
+.hoverlink :hover {
     font-weight: 800;
 }
 
