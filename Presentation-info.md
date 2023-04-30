@@ -92,9 +92,13 @@ it's done” John Mayer
 
 ### Technical problems
 
+- Changing css animation from a hover trigger as we found it on w3schools to a
+  click trigger was awkward and so was adjusting borders and margins
+
 - CSS animation for flipping a card and making sure it flipped at the right
   times: it turned out to need more controls after the MVP stage was reached
 - managing different learning content: it will be hard to make fields on card
   adapt to different info like languages
 - version management: sharing out tasks and then merging the outcomes is tricky
   when the code overlaps eg in style.css or bug fixing
+-
