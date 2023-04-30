@@ -37,6 +37,8 @@ domain) on your first try, is a fool's errand.
 Instead, use this process as a starting point which can be refined as new ideas
 (or roadblocks) pop up during the design and build process of your program.
 
+---
+
 As long ago as the 1880s, Hermann Ebbinghaus was showing how sequences of
 information can be learned by being exposed to them and then recalling them, and
 this is what our flash cards enable. Ebbinghaus concluded that the most
@@ -45,8 +47,7 @@ after each learning. So for best results, use our flashcards again after half a
 day, a full day, three days, 6 days, 12 days and 24 days. Or more often, if you
 like.
 
-"The capacity to learn is a gift; the ability to learn is a skill; the
-willingness to learn is a choice" Brian Herbert
+git stat
 
 Students, with supportive instruction, are capable of learning to develop and
 use a combination of phonological, orthographic and morphological strategies
@@ -94,11 +95,21 @@ it's done” John Mayer
 
 - Changing css animation from a hover trigger as we found it on w3schools to a
   click trigger was awkward and so was adjusting borders and margins
-
 - CSS animation for flipping a card and making sure it flipped at the right
   times: it turned out to need more controls after the MVP stage was reached
-- managing different learning content: it will be hard to make fields on card
-  adapt to different info like languages
 - version management: sharing out tasks and then merging the outcomes is tricky
   when the code overlaps eg in style.css or bug fixing
--
+
+- Future challenges:
+- - Add a switch to toggle text-to-speech on and off
+- - Add a page to allow uploading of user's own spellings and other content
+- - Add lists for different languages (maybe include examples in MVP?)
+- - Managing different learning content: it will be hard to make fields on card
+    adapt to different info like languages
+
+Things to have open:
+
+- VS code
+- live server
+- trello board
+- wireframe - google jamboard
