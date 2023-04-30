@@ -1,62 +1,63 @@
 body {
-	color: red;
+    /* margin: auto; */
+    color: red;
 }
 main {
-	background-color: white;
-	border: 2px solid rgb(178, 2, 2);
-	padding: 10px;
+    background-color: white;
+    border: 2px solid rgb(178, 2, 2);
+    padding: 1rem;
 }
 
 #how-to-use,
 #about {
-	display: flex;
-	flex: row nowrap;
-	justify-content: space-around;
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-around;
 }
 #how-to-use p,
 #about p {
-	margin: 3rem 1rem 1rem;
-	display: inline-block;
+    margin: 3rem 1rem 1rem;
+    display: inline-block;
 }
 #how-to-use p :hover,
 #about p :hover {
-	font-weight: 800;
+    font-weight: 800;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 .body-text {
-	color: rgb(178, 2, 2);
-	font-size: 0.9rem;
-	line-height: 1.05rem;
+    color: rgb(178, 2, 2);
+    font-size: 0.9rem;
+    line-height: 1.05rem;
 }
 .quote-text {
-	font-family: "M PLUS Rounded 1c";
-	width: 95%;
-	margin: 1rem auto;
-	line-height: 1.3rem;
-	letter-spacing: 0.02rem;
+    font-family: "M PLUS Rounded 1c";
+    width: 95%;
+    margin: 1rem auto;
+    line-height: 1.3rem;
+    letter-spacing: 0.02rem;
 }
 .reference-text {
-	color: rgb(178, 2, 2);
-	font-size: 0.6rem;
-	line-height: 0.7rem;
-	margin: 0.2rem 0;
+    color: rgb(178, 2, 2);
+    font-size: 0.6rem;
+    line-height: 0.7rem;
+    margin: 0.2rem 0;
 }
 
 #how-to-use p {
-	margin: 4rem 1rem 2rem;
+    margin: 4rem 1rem 2rem;
 }
 #how-to-use p + ol {
-	list-style-type: number;
+    list-style-type: number;
 }
 ol li {
-	line-height: 1.5rem;
-	margin: 0 3rem;
+    line-height: 1.5rem;
+    margin: 0 3rem;
 }
 ol .imp-instructions {
-	color: darkred;
-	margin-left: 5rem;
+    color: darkred;
+    margin-left: 5rem;
 }
