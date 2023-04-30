@@ -47,6 +47,13 @@ const wordList = {
 		],
 		["rhythm", "r <span class='rl'>h y </span>th "],
 	],
+	Japanese: [
+		["pig", "Buta", "豚"],
+		["sheep", "Hitsuji", "羊"],
+		["cat", "Neko", "猫"],
+		["horse", "Uma", "馬"],
+		["dog", "Inu", "犬"],
+	],
 };
 
 const noStrategyYet = [

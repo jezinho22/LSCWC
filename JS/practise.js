@@ -65,7 +65,7 @@ function textSubmit(event) {
 	event.preventDefault();
 	let textbox = event.target.textInput.value;
 	// compare attempt with actual word
-	if (textbox === currentWordList[wordIndex][0]) {
+	if (textbox.toLowerCase() === currentWordList[wordIndex][0]) {
 		// if attempt is right remove card from pack
 		currentWordList.shift();
 		// check if any more cards and if not ...
