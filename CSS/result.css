@@ -1,103 +1,61 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
-    /* font-size: 1rem; */
-    font-weight: 400px;
-    /* letter-spacing: 0.01em;
-    width: 90%;
-    max-width: 1024px;
-    margin: auto; */
-    color: rgb(98, 24, 24);
-    background-color: whitesmoke;
+	font-weight: 400px;
+	color: rgb(98, 24, 24);
+	background-color: whitesmoke;
 }
-/* 
-header img {
-    width: 30%;
-    justify-self: end;
-} */
-
-/* header {
-    background-color: rgb(178, 2, 2);
-    color: black;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: row; */
-/* margin-bottom: 1rem; */
-/* } */
-
-/* nav {
-    font-size: small;
-} */
 
 main h2 {
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    margin: 1rem;
-    font-weight: bold;
+	color: white;
+	font-size: 3rem;
+	text-align: center;
+	margin: 1rem;
+	font-weight: bold;
 }
 main {
-    position: relative;
-    min-height: 300px;
+	position: relative;
+	min-height: 300px;
 }
 .blur-image {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(178, 2, 2);
-    opacity: 50%;
-    z-index: -5;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(178, 2, 2);
+	opacity: 50%;
+	z-index: -5;
 }
 table {
-    text-align: center;
-    margin: auto;
-    margin-bottom: 1.5rem;
-    font-size: xx-small;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 1.5rem;
+	font-size: xx-small;
 }
 
 th {
-    border: 2px solid black;
-    padding: 0.25rem 1.5rem;
-    font-weight: bold;
-    background-color: rgb(178, 2, 2);
-    color: rgb(18, 0, 0);
+	border: 2px solid black;
+	padding: 0.25rem 1.5rem;
+	font-weight: bold;
+	background-color: rgb(178, 2, 2);
+	color: rgb(18, 0, 0);
 }
 
 td {
-    border: 2px solid black;
-    padding: 0.25rem 0.75rem;
-    background-color: whitesmoke;
+	border: 2px solid black;
+	padding: 0.25rem 0.75rem;
+	background-color: whitesmoke;
 }
 
-/* footer {
-	background-color: rgb(178, 2, 2);
-	color: black;
-	border: 2px solid black;
-	font-size: 13px;
-	padding: 0.5rem;
-	margin-top: 3rem;
-} */
-
 @media (min-width: 400px) {
-    table {
-        font-size: 0.75rem;
-    }
+	table {
+		font-size: 0.75rem;
+	}
 }
 
 @media (min-width: 500px) {
-    /* h1 {
-        font-size: 2.5rem;
-    } */
-    /* header h2 {
-        font-size: 1.25rem;
-    } */
-    /* nav li a {
-        padding-right: 0.75rem;
-    } */
-    table {
-        font-size: 1.25rem;
-    }
+	table {
+		font-size: 1.25rem;
+	}
 }

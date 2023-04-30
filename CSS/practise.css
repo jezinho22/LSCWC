@@ -40,7 +40,6 @@
 	color: black;
 	box-shadow: 5px 5px 10px 1px #000;
 	border: 5px solid #000;
-	/* border-image: url(/img/border-image.png) 15 / 5px / 0px stretch; */
 	background-color: whitesmoke;
 	font-size: 1.5rem;
 	display: flex;
@@ -58,7 +57,6 @@
 	color: white;
 	transform: rotateY(180deg);
 	box-shadow: 5px 5px 10px 1px #000;
-	/* border: 10px solid #000; */
 	animation: myAnim 2s ease 0s 1 normal forwards;
 }
 @keyframes myAnim {
@@ -127,8 +125,7 @@ main {
 	opacity: 50%;
 	z-index: -5;
 }
-/* main * {
-} */
+
 #textInput {
 	margin-bottom: 1rem;
 	font-size: 2rem;
