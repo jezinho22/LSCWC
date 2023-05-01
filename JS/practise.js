@@ -9,7 +9,31 @@ const submitButton = document.querySelector("#submit");
 const wordBox = document.getElementById("word");
 const strategyBox = document.getElementById("strategy");
 
+let localWords;
+
 console.log("practise.js link working");
+// create word objects
+// check local storage
+function getLocalWords() {
+	if (!localStorage.getItem("localWords")) {
+		localStorage.setItem("localWords");
+	} else {
+		(localWords = localStorage), getItem("localWords");
+	}
+}
+function createWords() {
+	for (let key in wordList) {
+		for (let subkey in wordList[key]) {
+			for (let word in wordList[key][subkey]) {
+				console.log(wordList[key][subkey][word]);
+			}
+			console.log("Working on " + wordList[key][subkey][0]);
+		}
+		console.log("Working on " + wordList[key]);
+		// let createWord = new Word ()
+	}
+}
+createWords();
 
 // populate dropdown list
 let dropdownList = document.getElementById("dropdownList");
@@ -49,15 +73,6 @@ function displayWord() {
 	document.getElementById("textInput").value = "";
 	flipCard.classList = "flip-card card-flip";
 	textToSpeech(currentWordList[wordIndex][0]);
-}
-// set voice to use - seems to change
-let voicesAvailable = speechSynthesis.getVoices();
-function textToSpeech(message) {
-	utterance = new SpeechSynthesisUtterance(message);
-	// voicesAvailable[0] is make English
-	// [1] and [2] are female English, [13] is Japanese
-	utterance.voice = voicesAvailable[2];
-	speechSynthesis.speak(utterance);
 }
 
 // actions on submitting each attempt at a word
