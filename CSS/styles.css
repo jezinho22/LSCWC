@@ -1,98 +1,159 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-	font-size: 1rem;
-	font-weight: 300;
-	letter-spacing: 0.01em;
-	color: brown;
-	background-color: whitesmoke;
-	background-image: url(/Assets/image_card.jpg);
-	background-repeat: repeat;
-	width: 90%;
-	max-width: 1024px;
-	margin: auto;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    color: brown;
+    background-color: whitesmoke;
+    background-image: url(/Assets/image_card.jpg);
+    background-repeat: repeat;
+    width: 90%;
+    max-width: 1024px;
+    margin: auto;
 }
 
 header img {
-	width: 30%;
-	justify-self: end;
+    width: 30%;
+    justify-self: end;
 }
 
 header {
-	background-color: rgb(178, 2, 2);
-	color: black;
-	border: 2px solid black;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 1rem;
+    background-color: rgb(178, 2, 2);
+    color: black;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 .heading {
-	display: flex;
-	flex-direction: column;
-	justify-content: left;
-	margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 0.5rem 0;
 }
 h1 {
-	margin: 0 0 0.5rem 1rem;
-	font-size: 1.5rem;
-	font-weight: 500;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-	font-style: italic;
+    margin: 0 0 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: italic;
 }
 header h2 {
-	margin: 0 0 0.75rem 1rem;
+    margin: 0 0 0.75rem 1rem;
 }
 nav {
-	font-size: smaller;
-	padding-left: 2px;
+    font-size: smaller;
+    padding-left: 2px;
 }
 nav ul li a {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 header div {
-	display: inline-block;
+    display: inline-block;
 }
 
 nav ul li {
-	list-style: none;
-	display: inline-block;
-	cursor: pointer;
-	margin-left: 1rem;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 1rem;
 }
 
 nav ul li:hover {
-	color: white;
-	transition: 0.3s;
+    color: white;
+    transition: 0.3s;
 }
 
 footer {
-	background-color: rgb(178, 2, 2);
-	color: black;
-	border: 2px solid black;
-	font-size: 13px;
-	padding: 0.5rem;
-	margin-top: 1rem;
+    background-color: rgb(178, 2, 2);
+    color: black;
+    border: 2px solid black;
+    font-size: 13px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+}
+
+footer ul {
+    margin-bottom: 0.5rem;
+}
+
+footer li {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.25rem;
+}
+
+footer li:hover {
+    color: white;
+}
+
+footer h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+footer h6 {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+footer p {
+    font-style: italic;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
 }
 
 @media (min-width: 425px) {
-	header img {
-		max-height: 110px;
-		max-width: 110px;
-	}
-	h1 {
-		font-size: 2.5rem;
-	}
-	header h2 {
-		font-size: 1.25rem;
-	}
-	nav li a {
-		padding-right: 0.75rem;
-	}
+    header img {
+        max-height: 110px;
+        max-width: 110px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    header h2 {
+        font-size: 1.25rem;
+    }
+    nav li a {
+        padding-right: 0.75rem;
+    }
+}
+
+@media (min-width: 500px) {
+    footer div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .linkcontainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer h6 {
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
 }
