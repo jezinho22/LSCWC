@@ -68,6 +68,11 @@ function textSubmit(event) {
 	if (textbox.toLowerCase() === currentWordList[wordIndex][0]) {
 		// if attempt is right remove card from pack
 		currentWordList.shift();
+		textToSpeech(
+			"That is correct. I will remove it from the pack. The next word is"
+		);
+		alert("That is correct. I will remove it from the pack");
+
 		// check if any more cards and if not ...
 		if (currentWordList.length === 0) {
 			textToSpeech("That was the last card");
@@ -88,6 +93,9 @@ function textSubmit(event) {
 		let wrongItem = currentWordList.shift();
 		myTurn.addMisspelled(wrongItem[0]);
 		textToSpeech(
+			"That is not correct, I will put this back in the pack. Try again in a minute!"
+		);
+		alert(
 			"That is not correct, I will put this back in the pack. Try again in a minute!"
 		);
 		currentWordList.push(wrongItem);
